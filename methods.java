@@ -36,22 +36,21 @@ public class methods {
 	public static Integer[] transferValueNextPlace(Integer[] array) {
 		// the method didn't work because the array's length was 5, but index started
 		// from zero, so the biggest index was 4, less than array's length
-		int i = array.length - 1;
-		while (i > 0) {
+		for (int i = (array.length-1); i >0;) {
 			array[i--] = array[i];
-		}
 		array[i] = null;
+	}
 		return array;
 	}
 	
 // method which transfers the value on the previous place in array
 	public static Integer[] transferValuePreviousPlace(Integer[] array) {
 
-		int i = 0;
-		while (i < array.length - 1) {
+		for (int i = 0; i <(array.length-1);) {
 			array[i++] = array[i];
-		}
+		
 		array[i] = null;
+	}
 		return array;
 	}
 
