@@ -24,7 +24,7 @@ public class methods {
 
 	}
 
-// method which transfers the value on next the place in array
+// method which transfers the value on the next place in array
 	// creates variable i which has value the same as last index in array
 	// creates cycle which works until i is not 0
 	// takes current place in array and post-decrements its i, so at the moment i
@@ -43,7 +43,8 @@ public class methods {
 		array[i] = null;
 		return array;
 	}
-
+	
+// method which transfers the value on the previous place in array
 	public static Integer[] transferValuePreviousPlace(Integer[] array) {
 
 		int i = 0;
